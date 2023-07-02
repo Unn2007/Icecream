@@ -60,3 +60,10 @@
   body {
     background-color: var(--main-background-color);
   }
+
+  .container {
+    min-width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+  }
