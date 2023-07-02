@@ -3,12 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>Icecream</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    <!-- <script type="module" src="./index.js"></script> -->
   </head>
   <body>
+    <header class="header">
+      <div class="container">
+        <a href="./index.html" class="logo">
+          <svg class="logo-icon">
+            <use href="./images/symbol-defs.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <div class="header-menu">
+          <nav class="navigation">
+            <ul>
+             <li><a href="">Home</a></li>
+             <li><a href="">How it’s made?</a></li>
+             <li><a href="">Our products</a></li>
+             <li><a href="">Contact</a></li>
+            </ul>
+           </nav>
+           <svg>
+             <use href="./images/symbol-defs.svg#icon-eva_menu-fill-1"></use>
+             <use href="./images/symbol-defs.svg#icon-ep_close-1"></use>
+           </svg>
+           <button type="button">Buy now</button>
+
+        </div>
+        
+      </div>
+    </header>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <!-- <include src="./partials/example.html"></include> -->
   </body>
 </html>
