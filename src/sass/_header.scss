@@ -19,8 +19,11 @@
     display: none;
 }
 .header-menu.is-open {
-    position: absolute;
+    outline: 1px solid red;
     display: flex;
+    position: absolute;
+    padding-top: 40px;
+    
     width: 100vw;
    left: 0;
    top: 100%;
@@ -45,3 +48,30 @@ display: block;
 .header-menu-button.is-open .icon-burger {
     display: none;
     }
+
+    .navigation-link {
+        
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1.22;
+        letter-spacing: 0em;
+        color: var(--first-text-color);
+        
+        
+        
+
+    }
+    .navigation-list>li:not(:last-child)  {
+        margin-bottom: 32px;}
+
+        .navigation {
+            margin-bottom: 114px;
+        }
+        .navigation-list>li {
+            text-align: center;
+        }
+        .navigation-link:hover {
+                
+            color: var(--second-text-color);
+                 
+        }
