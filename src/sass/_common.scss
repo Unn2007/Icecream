@@ -1,7 +1,7 @@
 // @import '~node_modules/modern-normalize/modern-normalize.css';
 :root {
-    --first-text-color: #2e2f42;
-    --second-text-color: #434455;
+    --first-text-color: #FCFCFC;
+    --second-text-color: #131313;
     --hover-color: #4d5ae5;
     --main-background-color: #84A178;
     --animatin-time: 250ms;
@@ -66,7 +66,11 @@
 
   body {
     background-color: var(--main-background-color);
+<<<<<<< HEAD
     font-family: 'Montserrat', sans-serif;
+=======
+    font-family: Montserrat;
+>>>>>>> c4b042ef3114ad7ca058b92ce6987aad0862a637
   }
 
   .container {
