@@ -41,9 +41,7 @@
   height: 32px;
 }
 
-.logo {
-  margin-right: auto;
-}
+
 
 .navigation {
   margin-bottom: 114px;
@@ -116,9 +114,7 @@
   background-origin: content-box;
 }
 
-.navigation-button.tablet-desktop {
-  display: none;
-}
+
 
 
 // __________________________________________
@@ -131,6 +127,9 @@
     width: 100%;
   
     
+  }
+  .logo {
+    margin-right: auto;
   }
 }
 
@@ -153,11 +152,15 @@
     max-width: 768px;
   
   }
-  .navigation-button.tablet-desktop {
-    display: inline-block;
+  .navigation-button {
+    position: absolute;
+   left: 180.2%;
+   top: -43px;
+  white-space: nowrap;
   }
+  
   .header-menu-button {
-    margin-right: 32px;
+    margin-right: 164px;
   }
   .header-menu.is-open .navigation-button {
     display: none;
@@ -168,9 +171,7 @@
   .header-menu.is-open {
     padding-bottom: 528px;
   }
-  .header-menu-button.is-open + .navigation-button{
-    display: none;
-  }
+  
   .header-menu-button.is-open{
     margin-right: 0;
   }
@@ -183,12 +184,18 @@
    
   }
   .header .container {
-    
+    justify-content: space-between;
     align-items: center;
   }
-
+  .logo{
+    margin-right: 0;
+  }
   .header-menu {
     position: static;
+    display: flex;
+    align-items: center;
+    gap: 204px;
+    
     
    
   }
@@ -196,7 +203,8 @@
     display: none;
   }
   .navigation-button {
-    display: none;
+    position: static;
+   
   }
   .navigation-list {
     display: flex;
@@ -213,24 +221,28 @@
     line-height: 1.25;
     letter-spacing: 0em;
   }
-  .navigation {
-    margin-right: 204px;
-  }
+  
   .navigation-link:hover {
     color: var(--akcent-color);
   }
 
-  .header-menu.is-open .navigation-button {
-    display: none;
-  }
+  // .header-menu.is-open .navigation-button {
+  //   display: none;
+  // }
   
   .header-menu.is-open {
     padding: 0px 0px 0px 0px; 
     position: static;
     transform: translateX(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 204px;
+    width: auto;
   }
-  .header-menu-button.is-open + .navigation-button{
-    display: inline-block;
+  .header-menu.is-open .navigation-button{
+    position: static;
+    display: block;
   }
   
 
